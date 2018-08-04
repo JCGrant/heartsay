@@ -45,4 +45,4 @@ var hearts = []string{
 `,
 }
 
-var textBounds = renderer.NewRect(7, 4, 23, 6)
+var textBounds = renderer.NewRect(7, 6, 23, 8)
