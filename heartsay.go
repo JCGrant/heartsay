@@ -1,9 +1,9 @@
-package heart
+package heartsay
 
 import (
 	"fmt"
 
-	"github.com/JCGrant/heart/renderer"
+	"github.com/JCGrant/heartsay/renderer"
 )
 
 func Say(text string) error {

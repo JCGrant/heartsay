@@ -1,7 +1,7 @@
-package heart
+package heartsay
 
 import (
-	"github.com/JCGrant/heart/renderer"
+	"github.com/JCGrant/heartsay/renderer"
 )
 
 var hearts = []string{

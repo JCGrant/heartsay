@@ -5,12 +5,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/JCGrant/heart"
+	"github.com/JCGrant/heartsay"
 )
 
 func main() {
 	text := strings.Join(os.Args[1:], " ")
-	err := heart.Say(text)
+	err := heartsay.Say(text)
 	if err != nil {
 		fmt.Println(err)
 	}
