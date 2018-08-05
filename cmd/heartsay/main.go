@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bufio"
+	"bytes"
 	"fmt"
 	"os"
 	"strings"
@@ -9,7 +11,11 @@ import (
 )
 
 func main() {
-	text := strings.Join(os.Args[1:], " ")
+	reader := bufio.NewReader(os.Stdin)
+	var buffer bytes.Buffer
+	buffer.ReadFrom(reader)
+	text := buffer.String()
+	text = strings.Trim(text, "\n")
 	err := heartsay.Say(text)
 	if err != nil {
 		fmt.Println(err)
